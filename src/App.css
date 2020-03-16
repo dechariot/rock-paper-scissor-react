@@ -36,3 +36,78 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: #24272e;
+}
+
+.Flex {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.border-red {
+  border: 10px solid red;
+}
+.red {
+  color: red;
+}
+
+.border-blue {
+  border: 10px solid blue;
+}
+
+.blue {
+  color: blue;
+}
+
+.border-green {
+  border: 5px solid green;
+}
+
+.green {
+  color: green;
+}
+
+.border-white {
+  border: 5px solid white;
+}
+
+.white {
+  color: white;
+}
+
+.choice-card {
+  width: 100px;
+  height: 200px;
+  background: #24272e;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  margin: 10px;
+  padding: 50px;
+  font-size: 2rem;
+}
+
+.choice-card:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+img {
+  width: 100%
+}
+
+img:hover {
+  transform: scale(1.2);
+  transition-duration: 300ms;
+  cursor: pointer;
+}

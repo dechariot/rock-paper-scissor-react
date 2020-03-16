@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ChoiceCard from './components/ChoiceCard.js'
+const choices = {
+  rock: "https://img.icons8.com/color/2x/hand-rock.png",
+  paper: "https://img.icons8.com/color/2x/hand.png",
+  scissors: "https://img.icons8.com/color/2x/hand-scissors.png"
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="white ">The Result is ...</h1>
+      <div className="Flex">
+      <ChoiceCard name="You" color="white" background="border-white" img={choices.paper} winner={false}/>
+      <ChoiceCard name="Computer" color="white" background="border-white" img={choices.paper} winner={false}/>
+      <ChoiceCard name="Sang" color="white" background="border-white" img={choices.scissors} winner={true} />
+    </div>
     </div>
   );
 }
