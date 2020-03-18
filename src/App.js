@@ -71,42 +71,43 @@ function App() {
   return (
     <div className="App">
       <div className="container-fluid board">
-
-      <div className="container d-flex">
-            {/* CPU */}
-            <div className="container mini-board">
-            <ChoiceCard 
+        <div className="container-fluid title">
+            Rock Paper Scissors Game
+        </div>
+        <div className="container d-flex">
+          {/* CPU */}
+          <div className="container mini-board m-0">
+            <ChoiceCard
               title="Computer"
               imgURL={computerChoice.url}
               previousWinner={previousWinner}
             />
-            </div>
+          </div>
 
-            {/* Choices Btn */}
-            <div className="container button mini-board">
-            <h1>{prompt}</h1>
-            <ChoiceButtons onPlayerChoose={onPlayerChoose} />
-            </div>
-
-            {/* Player */}
-            <div className="container mini-board">
+          {/* Player */}
+          <div className="container mini-board">
             <ChoiceCard
               title="You"
               previousWinner={previousWinner}
               imgURL={playerChoice && playerChoice.url}
             />
-            </div>
           </div>
+        </div>
+        {/* Choices Btn */}
+        <div className="container button">
+          <h1>{prompt}</h1>
+          <ChoiceButtons onPlayerChoose={onPlayerChoose} />
+        </div>
 
 
-          <div className="container history">
-            <h3>History</h3>
-            <ul>
-              {gameHistory.map(result => {
-                return <li>{result}</li>;
-              })}
-            </ul>
-          </div>
+        <div className="container history">
+          <h3>History</h3>
+          <ul>
+            {gameHistory.map(result => {
+              return <li>{result}</li>;
+            })}
+          </ul>
+        </div>
 
       </div>
     </div>

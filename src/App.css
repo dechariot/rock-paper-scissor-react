@@ -1,12 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,600,700&display=swap');
 body {
-  background: #24272e
+  background: #24272e;
+  font-family: 'Asap', sans-serif;
+  padding: 0;
+  margin: 0;
 }
+
 .App {
   display: block;
   background-color: #24272e;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+
+.container {
+  max-width: 540px;
+  padding: 0;
+}
+
+.title {
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-size: 50px;
+  text-align: center;
 }
 
 .board {
@@ -17,20 +35,19 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
-  height: 400px;
+  width: 50%;
+  text-align: center;
 }
 
 .choice-card {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 210px;
+  width: 197px;
   height: 210px;
-  margin: 25px;
-  font-size: 3em;
-  padding: 0 40px;
+  margin-top: 25px;
+  font-size: 2rem;
   color: white;
-  font-weight: 300;
   text-align: center;
   border-radius: 20px;
   border: 5px solid white;
@@ -38,11 +55,18 @@ body {
   justify-content: space-around;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.btn-item {
+  justify-content: center;
+
+}
 .button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 .btn {
   width: 100px;
@@ -53,6 +77,13 @@ body {
 h1 {
   font-size: 2rem;
   color: white;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+h3 {
+  font-weight: 700;
+  padding: 10px;
 }
 
 .winner {
@@ -69,8 +100,9 @@ h1 {
   color: white;
   text-align: center;
   height: 500px;
-  border: 2px solid white;
+  border: 5px solid white;
   margin-bottom: 50px;
+  border-radius: 20px;
 }
 
 button {
@@ -79,4 +111,6 @@ button {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
